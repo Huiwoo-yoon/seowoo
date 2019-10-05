@@ -28,7 +28,7 @@ ul{
 #grid #article{
   padding-left:65px;
 }
-@media(max-width:1200px){
+@media(max-width:800px){
   #grid{
     display: block;
   }
