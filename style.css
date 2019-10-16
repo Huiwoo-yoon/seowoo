@@ -20,7 +20,7 @@ ul{
 }
 #grid {
   display: grid;
-  grid-template-columns: 180px 1fr;
+  grid-template-columns: 185px 1fr;
 }
 #grid ul{
   padding-left:33px;
