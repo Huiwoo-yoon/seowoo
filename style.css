@@ -14,13 +14,13 @@ h1 {
 }
 ul{
   border-right:1px solid gray;
-  width:150px;
+  width:180px;
   margin:0;
   padding:20px;
 }
 #grid {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 180px 1fr;
 }
 #grid ul{
   padding-left:33px;
