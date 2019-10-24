@@ -6,9 +6,38 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media='(max-width: 990px)' href="style_p.css">
+    <script>
+        function NightDayHandler(self) {
+            var target = document.querySelector('body');
+            if (self.value === 'night') {
+                target.style.backgroundColor = 'black';
+                target.style.color = 'white';
+                self.value = 'day';
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    alist[i].style.color = 'powderblue';
+                    i = i + 1;
+                }
+            } else {
+                target.style.backgroundColor = 'white';
+                target.style.color = 'black';
+                self.value = 'night'
+                var alist = document.querySelectorAll('a');
+                var i = 0;
+                while (i < alist.length) {
+                    alist[i].style.color = 'black';
+                    i = i + 1;
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
+        <input type="button" value="night" onclick="
+            NightDayHandler(this);
+        ">
     <h1><a href="index.html">현주와 희우와 서우의 집
             </a></h1>
     <div id="grid">
