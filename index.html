@@ -6,32 +6,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media='(max-width: 990px)' href="style_p.css">
-    <script>
-        function NightDayHandler(self) {
-            var target = document.querySelector('body');
-            if (self.value === 'night') {
-                target.style.backgroundColor = 'black';
-                target.style.color = 'white';
-                self.value = 'day';
-                var alist = document.querySelectorAll('a');
-                var i = 0;
-                while (i < alist.length) {
-                    alist[i].style.color = 'powderblue';
-                    i = i + 1;
-                }
-            } else {
-                target.style.backgroundColor = 'white';
-                target.style.color = 'black';
-                self.value = 'night'
-                var alist = document.querySelectorAll('a');
-                var i = 0;
-                while (i < alist.length) {
-                    alist[i].style.color = 'black';
-                    i = i + 1;
-                }
-            }
-        }
-        </script>
+    <script src="colors.js">
+    </script>
 </head>
 
 <body>
@@ -43,8 +19,10 @@
 <div id="grid">
 
     <ul>
-        <a href="trip_checklist.html"><li>서우 여행 준비물 </li></a>
-        <li>현주와 희우 여행 준비물</li>
+        <a href="trip_checklist_seowoo.html"><li>서우 여행 준비물 </li></a>
+        <a href="trip_checklist_hh.html">
+            <li>현주와 희우 여행 준비물</li>
+        </a>
         <a href="calendar.html">
             <li>달력</li>
         </a>

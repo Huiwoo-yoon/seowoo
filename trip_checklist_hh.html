@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>엄마아빠 여행 체크리스트</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media='(max-width: 990px)' href="style_p.css">
+      <script src="colors.js">
+      </script>
+</head>
+
+<body>
+    <input type="button" value="night" onclick="
+            NightDayHandler(this);
+        ">
+    <h1><a href="index.html">현주와 희우와 서우의 집
+            </a></h1>
+<div id="grid">
+        <ul>
+
+            <a href="trip_checklist_seowoo.html">
+                <li>서우 여행 준비물 </li>
+            </a>
+            <a href="trip_checklist_hh.html"><li>현주와 희우 여행 준비물</li></a>
+            <a href="calendar.html">
+                <li>달력</li>
+            </a>
+
+        </ul>
+    <script>
+      var hh_clothe = ['양말','팬티','속옷','바지','티']
+      var hh_else = ['화장품','충전기','돈','여권','책이나 패드']
+    </script>
+    <script src="listup_h.js"></script>  
+      
+
+    <div id="article">
+    <h2>여행 체크리스트</h2>
+    <form>
+        <fieldset>
+            <legend>우주 옷들</legend>
+            <p>
+              <script>
+              ListUp.hhClothe();
+              </script>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>우주 그밖의 것들</legend>
+            <p>
+              <script>
+              ListUp.hhElse();
+              </script>
+
+            </p>
+        </fieldset>
+        
+    </form>
+    </div>
+</div>
+</body>
+
+</html>
